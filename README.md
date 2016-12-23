@@ -17,7 +17,7 @@ I am using a Twilio trial account to send the SMS messages.
 ## Getting going
 
 ```
-git clone git@github.com:rickpeyton/apple-airpods-inventory-check.git
+git clone https://github.com/rickpeyton/apple-airpods-inventory-check.git
 cd apple-airpods-inventory-check
 bundle
 touch .env
@@ -40,4 +40,13 @@ MY_NUMBER=...
 ruby run.rb
 ```
 
-You will either receive a text or find a result in `log`
+You will either receive a text or find a result in `logj
+
+### Figuring out how to run a cron job proved more time-consuming than writing the script
+
+Using `rbenv` and inlining all of the secrets
+
+```
+* * * * * /bin/bash -c 'export PATH="$HOME/.rbenv/bin:$PATH" ; eval "$(rbenv
+    init -)"; cd /home/rick/apple-airpods-inventory-check; ruby run.rb'
+```
