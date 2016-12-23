@@ -5,7 +5,7 @@ require 'json'
 Bundler.require
 
 Dotenv.load
-URL = ENV["APPLE_STORE_URL"]
+URL = "http://www.apple.com/shop/retail/pickup-message?parts.0=MMEF2AM%2FA&location=37067"
 TWILIO_SID = ENV["TWILIO_SID"]
 TWILIO_AUTH = ENV["TWILIO_AUTH"]
 TWILIO_NUMBER = ENV["TWILIO_NUMBER"]
