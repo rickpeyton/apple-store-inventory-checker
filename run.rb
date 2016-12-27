@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'json'
+require 'yaml'
 
 Bundler.require
 
@@ -22,6 +23,38 @@ PART = "MMEF2AM/A"
 
 @get_apple = Typhoeus.get(URL)
 
+def load_status
+  if File.exists?("./status") && (YAML.load(File.open("./status", "r")).is_a? Hash)
+    @status = YAML.load(File.open("./status", "r"))
+  else
+    @status = {}
+  end
+end
+
+def update_status(store, part)
+  if @status[store["storeNumber"]].is_a? Hash
+    @status[store["storeNumber"]][:previous] = @status[store["storeNumber"]][:current]
+    @status[store["storeNumber"]][:current] = part["pickupDisplay"]
+    @status[store["storeNumber"]][:change] = did_status_change?(store)
+  else
+    @status[store["storeNumber"]] = {
+      previous: nil,
+      current: part["pickupDisplay"],
+      change: true
+    }
+  end
+end
+
+def did_status_change?(store)
+  @status[store["storeNumber"]][:previous] != @status[store["storeNumber"]][:current]
+end
+
+def write_status
+  File.open("./status", "w+") do |f|
+    f.write(YAML.dump(@status))
+  end
+end
+
 def send_sms(message)
   Typhoeus.post(
     TWILIO,
@@ -37,11 +70,12 @@ end
 
 def check_inventory(store)
   part = store["partsAvailability"][PART]
-  if part["pickupDisplay"] != "ships-to-store"
+  update_status(store, part)
+  if @status[store["storeNumber"]][:change]
     send_sms("#{part["storePickupProductTitle"]} #{part["pickupDisplay"]} at #{store["storeName"]}!")
   else
     File.open("./log", "a+") do |f|
-      f.write "#{DateTime.now}: #{part["storePickupProductTitle"]} unavailable at #{store["storeName"]}\n"
+      f.write "#{DateTime.now}: #{part["storePickupProductTitle"]} status unchanged at #{store["storeName"]}\n"
     end
   end
 end
@@ -51,8 +85,10 @@ def get_filtered_stores
 end
 
 if @get_apple.success?
+  load_status
   @get_apple_json = JSON.parse(@get_apple.response_body)
   get_filtered_stores.each { |store| check_inventory(store) }
+  write_status
 else
   send_sms("Airpods check failed at #{DateTime.now}")
 end
