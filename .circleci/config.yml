@@ -1,0 +1,101 @@
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+version: 2
+jobs:
+  build:
+    environment:
+      CC_TEST_REPORTER_ID: edcfd6157a2c4f277783e772ad6d2f2fb355fc22a0a39279ca95d4627d1277ad
+    docker:
+      # specify the version you desire here
+      - image: circleci/ruby:2.4.6
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/postgres:9.4
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "Gemfile.lock" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run:
+          name: install dependencies
+          command: |
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+      # run tests!
+      - run:
+          name: Install Code Climate Test Reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+      - run:
+          name: run tests
+          command: |
+            mkdir /tmp/test-results
+            ./cc-test-reporter before-build
+            TEST_FILES="$(circleci tests glob "spec/**/*_spec.rb" | \
+              circleci tests split --split-by=timings)"
+
+            bundle exec rspec \
+              --format RspecJunitFormatter \
+              --out /tmp/test-results/rspec.xml \
+              $TEST_FILES
+      - run:
+          name: Code Climate Test Coverage
+          command: |
+            ./cc-test-reporter format-coverage -t simplecov -o "coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
+
+      # collect reports
+      - store_test_results:
+          path: /tmp/test-results
+      - store_artifacts:
+          path: /tmp/test-results
+          destination: test-results
+      - deploy:
+          command: |
+            ./cc-test-reporter sum-coverage --output - --parts $CIRCLE_NODE_TOTAL coverage/codeclimate.*.json | ./cc-test-reporter upload-coverage --debug --input -
+  deploy:
+    docker:
+      - image: circleci/ruby:2.4.6
+      
+    working_directory: ~/repo
+    
+    steps:
+      - checkout
+      - run:
+          name: Setup Rubygems
+          command: bash .circleci/setup-rubygems.sh
+      
+      - run:
+          name: Publish to Rubygems
+          command: |
+            gem build apple_store_inventory_checker.gemspec
+            gem push "apple_store_inventory_checker-$(git describe --tags).gem"
+
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - build
+      - deploy:
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore: /.*/

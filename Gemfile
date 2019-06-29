@@ -1,5 +1,6 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem "typhoeus"
-gem 'dotenv'
-gem "pry"
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+
+# Specify your gem's dependencies in apple_store_inventory_checker.gemspec
+gemspec
