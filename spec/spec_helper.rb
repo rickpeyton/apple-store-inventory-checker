@@ -1,5 +1,8 @@
 require "bundler/setup"
-require "apple_store_inventory_checker"
+require "ostruct"
+
+require_relative "../lib/apple_store_inventory_checker"
+require_relative "./fake_client"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -12,3 +15,9 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+def setup
+  AppleStoreInventoryChecker.client = AppleStoreInventoryChecker::FakeClient
+end
+
+setup
