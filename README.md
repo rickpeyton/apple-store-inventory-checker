@@ -1,7 +1,7 @@
 # Apple Store Inventory Checker
 
 [![Gem Version](https://badge.fury.io/rb/apple_store_inventory_checker.svg)](https://badge.fury.io/rb/apple_store_inventory_checker)
-[![CircleCI](https://circleci.com/gh/rickpeyton/apple_store_inventory_checker.svg?style=svg)](https://circleci.com/gh/rickpeyton/apple_store_inventory_checker)
+[![CircleCI](https://circleci.com/gh/rickpeyton/apple-store-inventory-checker.svg?style=svg)](https://circleci.com/gh/rickpeyton/apple-store-inventory-checker)
 [![Maintainability](https://api.codeclimate.com/v1/badges/df6fd8e126fe44f99348/maintainability)](https://codeclimate.com/github/rickpeyton/apple-store-inventory-checker/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/df6fd8e126fe44f99348/test_coverage)](https://codeclimate.com/github/rickpeyton/apple-store-inventory-checker/test_coverage)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&identifier=77203066)](https://dependabot.com)
@@ -54,7 +54,7 @@ first_result.state # TN
 first_result.phone # 615-435 0620
 first_result.url # http://www.apple.com/retail/coolspringsgalleria
 
-fourth_result = results[4]
+fourth_result = results[3]
 
 fourth_result.product # Powerbeats Pro - Totally Wireless Earphones - Black
 fourth_result.in_stock? # true
