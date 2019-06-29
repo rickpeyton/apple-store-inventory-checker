@@ -1,0 +1,639 @@
+{
+  "head": { "status": "200", "data": {} },
+  "body": {
+    "stores": [
+      {
+        "storeEmail": "coolspringsgalleria@apple.com",
+        "storeName": "CoolSprings Galleria",
+        "reservationUrl": "http://www.apple.com/retail/coolspringsgalleria",
+        "makeReservationUrl": "http://www.apple.com/retail/coolspringsgalleria",
+        "state": "TN",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R513.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Franklin",
+        "storeNumber": "R513",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Jul 25 at Apple CoolSprings Galleria",
+            "pickupSearchQuote": "Available:<br/>Jul 25",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "ships-to-store"
+          }
+        },
+        "phoneNumber": "615-435 0620",
+        "address": {
+          "address": "Apple CoolSprings Galleria",
+          "address3": null,
+          "address2": "1800 Galleria Boulevard",
+          "postalCode": "37067"
+        },
+        "hoursUrl": "http://www.apple.com/retail/coolspringsgalleria",
+        "directionsUrl": "http://www.apple.com/retail/coolspringsgalleria",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "10:00 AM-9:00 PM", "storeDays": "Mon-Sat:" },
+            { "storeTimings": "12:00 PM-6:00 PM", "storeDays": "Sun:" }
+          ]
+        },
+        "storelatitude": 35.95814,
+        "storelongitude": -86.81336,
+        "storedistance": 4.76,
+        "storeDistanceWithUnit": "4.76 mi",
+        "storeDistanceVoText": "4.76 mi from 37067",
+        "storelistnumber": 1,
+        "storeListNumber": 1
+      },
+      {
+        "storeEmail": "greenhills@apple.com",
+        "storeName": "Green Hills",
+        "reservationUrl": "http://www.apple.com/retail/greenhills",
+        "makeReservationUrl": "http://www.apple.com/retail/greenhills",
+        "state": "TN",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R123.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Nashville",
+        "storeNumber": "R123",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Jul 25 at Apple Green Hills",
+            "pickupSearchQuote": "Available:<br/>Jul 25",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "ships-to-store"
+          }
+        },
+        "phoneNumber": "615-514 2430",
+        "address": {
+          "address": "Apple Green Hills",
+          "address3": null,
+          "address2": "2126 Abbott Martin Road",
+          "postalCode": "37215"
+        },
+        "hoursUrl": "http://www.apple.com/retail/greenhills",
+        "directionsUrl": "http://www.apple.com/retail/greenhills",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "10:00 AM-9:00 PM", "storeDays": "Mon-Sat:" },
+            { "storeTimings": "12:00 PM-6:00 PM", "storeDays": "Sun:" }
+          ]
+        },
+        "storelatitude": 36.10704,
+        "storelongitude": -86.816382,
+        "storedistance": 13.97,
+        "storeDistanceWithUnit": "13.97 mi",
+        "storeDistanceVoText": "13.97 mi from 37215",
+        "storelistnumber": 2,
+        "storeListNumber": 2
+      },
+      {
+        "storeEmail": "bridgestreet@apple.com",
+        "storeName": "Bridge Street",
+        "reservationUrl": "http://www.apple.com/retail/bridgestreet",
+        "makeReservationUrl": "http://www.apple.com/retail/bridgestreet",
+        "state": "AL",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R266.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Huntsville",
+        "storeNumber": "R266",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Jul 25 at Apple Bridge Street",
+            "pickupSearchQuote": "Available:<br/>Jul 25",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "ships-to-store"
+          }
+        },
+        "phoneNumber": "256-327 8800",
+        "address": {
+          "address": "Apple Bridge Street",
+          "address3": null,
+          "address2": "320 The Bridge Street",
+          "postalCode": "35806"
+        },
+        "hoursUrl": "http://www.apple.com/retail/bridgestreet",
+        "directionsUrl": "http://www.apple.com/retail/bridgestreet",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "10:00 AM-9:00 PM", "storeDays": "Mon-Sat:" },
+            { "storeTimings": "12:00 PM-6:00 PM", "storeDays": "Sun:" }
+          ]
+        },
+        "storelatitude": 34.716144,
+        "storelongitude": -86.673021,
+        "storedistance": 83.29,
+        "storeDistanceWithUnit": "83.29 mi",
+        "storeDistanceVoText": "83.29 mi from 35806",
+        "storelistnumber": 3,
+        "storeListNumber": 3
+      },
+      {
+        "storeEmail": "westtownmall@apple.com",
+        "storeName": "West Town Mall",
+        "reservationUrl": "http://www.apple.com/retail/westtownmall",
+        "makeReservationUrl": "http://www.apple.com/retail/westtownmall",
+        "state": "TN",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R203.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Knoxville",
+        "storeNumber": "R203",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Today at Apple West Town Mall",
+            "pickupSearchQuote": "Available:<br/>Today",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "available"
+          }
+        },
+        "phoneNumber": "865-824 2507",
+        "address": {
+          "address": "Apple West Town Mall",
+          "address3": null,
+          "address2": "7600 Kingston Pike",
+          "postalCode": "37919"
+        },
+        "hoursUrl": "http://www.apple.com/retail/westtownmall",
+        "directionsUrl": "http://www.apple.com/retail/westtownmall",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "10:00 AM-9:00 PM", "storeDays": "Mon-Sat:" },
+            { "storeTimings": "12:00 PM-6:00 PM", "storeDays": "Sun:" }
+          ]
+        },
+        "storelatitude": 35.924375,
+        "storelongitude": -84.03725,
+        "storedistance": 158.76,
+        "storeDistanceWithUnit": "158.76 mi",
+        "storeDistanceVoText": "158.76 mi from 37919",
+        "storelistnumber": 4,
+        "storeListNumber": 4
+      },
+      {
+        "storeEmail": "thesummit@apple.com",
+        "storeName": "The Summit",
+        "reservationUrl": "http://www.apple.com/retail/thesummit",
+        "makeReservationUrl": "http://www.apple.com/retail/thesummit",
+        "state": "AL",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R225.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Birmingham",
+        "storeNumber": "R225",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Jul 25 at Apple The Summit",
+            "pickupSearchQuote": "Available:<br/>Jul 25",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "ships-to-store"
+          }
+        },
+        "phoneNumber": "205-909 2570",
+        "address": {
+          "address": "Apple The Summit",
+          "address3": null,
+          "address2": "217 Summit Boulevard",
+          "postalCode": "35243"
+        },
+        "hoursUrl": "http://www.apple.com/retail/thesummit",
+        "directionsUrl": "http://www.apple.com/retail/thesummit",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "10:00 AM-9:00 PM", "storeDays": "Mon-Sat:" },
+            { "storeTimings": "12:00 PM-6:00 PM", "storeDays": "Sun:" }
+          ]
+        },
+        "storelatitude": 33.44801152,
+        "storelongitude": -86.72851362,
+        "storedistance": 170.33,
+        "storeDistanceWithUnit": "170.33 mi",
+        "storeDistanceVoText": "170.33 mi from 35243",
+        "storelistnumber": 5,
+        "storeListNumber": 5
+      },
+      {
+        "storeEmail": "saddlecreek@apple.com",
+        "storeName": "Saddle Creek",
+        "reservationUrl": "http://www.apple.com/retail/saddlecreek",
+        "makeReservationUrl": "http://www.apple.com/retail/saddlecreek",
+        "state": "TN",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R020.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Germantown",
+        "storeNumber": "R020",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Jul 25 at Apple Saddle Creek",
+            "pickupSearchQuote": "Available:<br/>Jul 25",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "ships-to-store"
+          }
+        },
+        "phoneNumber": "901-751 6980",
+        "address": {
+          "address": "Apple Saddle Creek",
+          "address3": null,
+          "address2": "2031 West Street",
+          "postalCode": "38138"
+        },
+        "hoursUrl": "http://www.apple.com/retail/saddlecreek",
+        "directionsUrl": "http://www.apple.com/retail/saddlecreek",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "12:00 PM-5:30 PM", "storeDays": "Sun:" },
+            { "storeTimings": "10:00 AM-8:00 PM", "storeDays": "Mon-Sat:" }
+          ]
+        },
+        "storelatitude": 35.09344,
+        "storelongitude": -89.812433,
+        "storedistance": 174.62,
+        "storeDistanceWithUnit": "174.62 mi",
+        "storeDistanceVoText": "174.62 mi from 38138",
+        "storelistnumber": 6,
+        "storeListNumber": 6
+      },
+      {
+        "storeEmail": "oxmoor@apple.com",
+        "storeName": "Oxmoor",
+        "reservationUrl": "http://www.apple.com/retail/oxmoor",
+        "makeReservationUrl": "http://www.apple.com/retail/oxmoor",
+        "state": "KY",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R264.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Louisville",
+        "storeNumber": "R264",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Jul 25 at Apple Oxmoor",
+            "pickupSearchQuote": "Available:<br/>Jul 25",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "ships-to-store"
+          }
+        },
+        "phoneNumber": "502-326 2840",
+        "address": {
+          "address": "Apple Oxmoor",
+          "address3": null,
+          "address2": "7900 Shelbyville Road",
+          "postalCode": "40222"
+        },
+        "hoursUrl": "http://www.apple.com/retail/oxmoor",
+        "directionsUrl": "http://www.apple.com/retail/oxmoor",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "11:00 AM-6:00 PM", "storeDays": "Sun:" },
+            { "storeTimings": "10:00 AM-9:00 PM", "storeDays": "Mon-Sat:" }
+          ]
+        },
+        "storelatitude": 38.24713,
+        "storelongitude": -85.60974,
+        "storedistance": 175.86,
+        "storeDistanceWithUnit": "175.86 mi",
+        "storeDistanceVoText": "175.86 mi from 40222",
+        "storelistnumber": 7,
+        "storeListNumber": 7
+      },
+      {
+        "storeEmail": "fayettemall@apple.com",
+        "storeName": "Fayette Mall",
+        "reservationUrl": "http://www.apple.com/retail/fayettemall",
+        "makeReservationUrl": "http://www.apple.com/retail/fayettemall",
+        "state": "KY",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R288.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Lexington",
+        "storeNumber": "R288",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Jul 25 at Apple Fayette Mall",
+            "pickupSearchQuote": "Available:<br/>Jul 25",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "ships-to-store"
+          }
+        },
+        "phoneNumber": "859-971 5400",
+        "address": {
+          "address": "Apple Fayette Mall",
+          "address3": null,
+          "address2": "3401 Nicholasville Road",
+          "postalCode": "40503"
+        },
+        "hoursUrl": "http://www.apple.com/retail/fayettemall",
+        "directionsUrl": "http://www.apple.com/retail/fayettemall",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "10:00 AM-9:00 PM", "storeDays": "Mon-Sat:" },
+            { "storeTimings": "12:00 PM-6:00 PM", "storeDays": "Sun:" }
+          ]
+        },
+        "storelatitude": 37.98999,
+        "storelongitude": -84.5275,
+        "storedistance": 193.48,
+        "storeDistanceWithUnit": "193.48 mi",
+        "storeDistanceVoText": "193.48 mi from 40503",
+        "storelistnumber": 8,
+        "storeListNumber": 8
+      },
+      {
+        "storeEmail": "avalon@apple.com",
+        "storeName": "Avalon",
+        "reservationUrl": "http://www.apple.com/retail/avalon",
+        "makeReservationUrl": "http://www.apple.com/retail/avalon",
+        "state": "GA",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R080.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Alpharetta",
+        "storeNumber": "R080",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Jul 25 at Apple Avalon",
+            "pickupSearchQuote": "Available:<br/>Jul 25",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "ships-to-store"
+          }
+        },
+        "phoneNumber": "770-510 1670",
+        "address": {
+          "address": "Apple Avalon",
+          "address3": null,
+          "address2": "8130 Avalon Boulevard",
+          "postalCode": "30009"
+        },
+        "hoursUrl": "http://www.apple.com/retail/avalon",
+        "directionsUrl": "http://www.apple.com/retail/avalon",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "11:00 AM-7:00 PM", "storeDays": "Sun:" },
+            { "storeTimings": "10:00 AM-9:00 PM", "storeDays": "Mon-Sat:" }
+          ]
+        },
+        "storelatitude": 34.07062236953006,
+        "storelongitude": -84.27481412887573,
+        "storedistance": 194.44,
+        "storeDistanceWithUnit": "194.44 mi",
+        "storeDistanceVoText": "194.44 mi from 30009",
+        "storelistnumber": 9,
+        "storeListNumber": 9
+      },
+      {
+        "storeEmail": "cumberlandmall@apple.com",
+        "storeName": "Cumberland Mall",
+        "reservationUrl": "http://www.apple.com/retail/cumberlandmall",
+        "makeReservationUrl": "http://www.apple.com/retail/cumberlandmall",
+        "state": "GA",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R591.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Atlanta",
+        "storeNumber": "R591",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Jul 25 at Apple Cumberland Mall",
+            "pickupSearchQuote": "Available:<br/>Jul 25",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "ships-to-store"
+          }
+        },
+        "phoneNumber": "678-4020725",
+        "address": {
+          "address": "Apple Cumberland Mall",
+          "address3": "Suite 1153",
+          "address2": "2860 Cumberland Mall",
+          "postalCode": "30339"
+        },
+        "hoursUrl": "http://www.apple.com/retail/cumberlandmall",
+        "directionsUrl": "http://www.apple.com/retail/cumberlandmall",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "10:00 AM-9:00 PM", "storeDays": "Mon-Sat:" },
+            { "storeTimings": "12:00 PM-6:00 PM", "storeDays": "Sun:" }
+          ]
+        },
+        "storelatitude": 33.88024,
+        "storelongitude": -84.46835,
+        "storedistance": 195.61,
+        "storeDistanceWithUnit": "195.61 mi",
+        "storeDistanceVoText": "195.61 mi from 30339",
+        "storelistnumber": 10,
+        "storeListNumber": 10
+      },
+      {
+        "storeEmail": "perimeter@apple.com",
+        "storeName": "Perimeter",
+        "reservationUrl": "http://www.apple.com/retail/perimeter",
+        "makeReservationUrl": "http://www.apple.com/retail/perimeter",
+        "state": "GA",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R184.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Atlanta",
+        "storeNumber": "R184",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Jul 25 at Apple Perimeter",
+            "pickupSearchQuote": "Available:<br/>Jul 25",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "ships-to-store"
+          }
+        },
+        "phoneNumber": "678-459 9800",
+        "address": {
+          "address": "Apple Perimeter",
+          "address3": null,
+          "address2": "4400 Ashford Dunwoody Road",
+          "postalCode": "30346"
+        },
+        "hoursUrl": "http://www.apple.com/retail/perimeter",
+        "directionsUrl": "http://www.apple.com/retail/perimeter",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "12:00 PM-7:00 PM", "storeDays": "Sun:" },
+            { "storeTimings": "10:00 AM-9:00 PM", "storeDays": "Mon-Sat:" }
+          ]
+        },
+        "storelatitude": 33.92409,
+        "storelongitude": -84.34062,
+        "storedistance": 198.59,
+        "storeDistanceWithUnit": "198.59 mi",
+        "storeDistanceVoText": "198.59 mi from 30346",
+        "storelistnumber": 11,
+        "storeListNumber": 11
+      },
+      {
+        "storeEmail": "lenoxsquare@apple.com",
+        "storeName": "Lenox Square",
+        "reservationUrl": "http://www.apple.com/retail/lenoxsquare",
+        "makeReservationUrl": "http://www.apple.com/retail/lenoxsquare",
+        "state": "GA",
+        "storeImageUrl": "https://rtlimages.apple.com/cmc/dieter/store/4_3/R006.png?resize=828:*&output-format=jpg",
+        "country": "US",
+        "city": "Atlanta",
+        "storeNumber": "R006",
+        "partsAvailability": {
+          "MV6Y2LL/A": {
+            "storePickEligible": true,
+            "storeSearchEnabled": true,
+            "storeSelectionEnabled": true,
+            "storePickupQuote": "Jul 25 at Apple Lenox Square",
+            "pickupSearchQuote": "Available:<br/>Jul 25",
+            "storePickupLabel": "Pickup:",
+            "partNumber": "MV6Y2LL/A",
+            "purchaseOption": "",
+            "ctoOptions": "",
+            "storePickupLinkText": "Check availability",
+            "storePickupProductTitle": "Powerbeats Pro - Totally Wireless Earphones - Black",
+            "pickupDisplay": "ships-to-store"
+          }
+        },
+        "phoneNumber": "404-926 3085",
+        "address": {
+          "address": "Apple Lenox Square",
+          "address3": null,
+          "address2": "3393 Peachtree Road NE",
+          "postalCode": "30326"
+        },
+        "hoursUrl": "http://www.apple.com/retail/lenoxsquare",
+        "directionsUrl": "http://www.apple.com/retail/lenoxsquare",
+        "storeHours": {
+          "storeHoursText": "Store Hours",
+          "bopisPickupDays": "Days",
+          "bopisPickupHours": "Hours",
+          "hours": [
+            { "storeTimings": "11:00 AM-7:00 PM", "storeDays": "Sun:" },
+            { "storeTimings": "10:00 AM-9:00 PM", "storeDays": "Mon-Sat:" }
+          ]
+        },
+        "storelatitude": 33.847202,
+        "storelongitude": -84.363156,
+        "storedistance": 201.44,
+        "storeDistanceWithUnit": "201.44 mi",
+        "storeDistanceVoText": "201.44 mi from 30326",
+        "storelistnumber": 12,
+        "storeListNumber": 12
+      }
+    ],
+    "overlayInitiatedFromWarmStart": false,
+    "viewMoreHoursLinkText": "View more hours",
+    "storesCount": "12 stores found near 37064",
+    "little": false,
+    "location": "37064",
+    "notAvailableNearby": "Not available today at [X] nearest stores.",
+    "notAvailableNearOneStore": "Not available today at the nearest store.",
+    "warmDudeWithAPU": false
+  }
+}
