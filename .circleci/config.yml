@@ -6,7 +6,7 @@ version: 2
 jobs:
   build:
     environment:
-      CC_TEST_REPORTER_ID: edcfd6157a2c4f277783e772ad6d2f2fb355fc22a0a39279ca95d4627d1277ad
+      CC_TEST_REPORTER_ID: c295d1731b36a91f463f605831f39750dddaa5c6fd65fab2be78405b5a00c226
     docker:
       # specify the version you desire here
       - image: circleci/ruby:2.4.6
