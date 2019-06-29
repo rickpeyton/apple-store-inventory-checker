@@ -28,8 +28,8 @@ module AppleStoreInventoryChecker
 
   private
 
-    def refresh_list_objects(raw_results, max_distance:)
-      raw_results.map do |raw_result|
+    def refresh_list_objects(raw_results, max_distance:) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
+      objects = raw_results.map do |raw_result|
         result = Result.new(product_id: product_id)
         result.product = raw_result.dig(:partsAvailability, product_id.to_sym, :storePickupProductTitle)
         result.in_stock = raw_result.dig(:partsAvailability, product_id.to_sym, :storePickupQuote).include?("Today")
@@ -40,7 +40,8 @@ module AppleStoreInventoryChecker
         result.phone = raw_result.dig(:phoneNumber)
         result.url = raw_result.dig(:directionsUrl)
         result
-      end.select { |result| result&.distance < max_distance }
+      end
+      objects.select { |result| result&.distance && (result.distance < max_distance) }
     end
   end
 end
