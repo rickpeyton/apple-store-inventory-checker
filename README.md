@@ -40,10 +40,14 @@ $ gem install apple_store_inventory_checker
 
 ## Usage
 
-```ruby
-results = AppleStoreInventoryChecker.retrieve("MV6Y2LL/A", zip: "37064", max_distance: 160)
+The first argument is the item number. You might be able to pull this out of the URL, but the best way to be sure is to pull it off of the XHR request Apple makes to their "pickup-message" endpoint when you load the product Apple Store page.
 
-first_result = results.first # AppleStoreInventoryChecker::Result
+Max Distance is optional and is an integer representation of the miles you want to search for Apple Stores from your zip code. The default is 15.
+
+```ruby
+retrieve_results = AppleStoreInventoryChecker.retrieve("MV6Y2LL/A", zip: "37064", max_distance: 160)
+
+first_result = retrieve_results.first # AppleStoreInventoryChecker::Result
 
 first_result.product # Powerbeats Pro - Totally Wireless Earphones - Black
 first_result.in_stock? # false
@@ -54,16 +58,16 @@ first_result.state # TN
 first_result.phone # 615-435 0620
 first_result.url # http://www.apple.com/retail/coolspringsgalleria
 
-fourth_result = results[3]
+in_stock_results = retrieve_results.select { |result| result.in_stock? }
 
-fourth_result.product # Powerbeats Pro - Totally Wireless Earphones - Black
-fourth_result.in_stock? # true
-fourth_result.distance # 158.76
-fourth_result.store # West Town Mall
-fourth_result.city # Knoxville
-fourth_result.state # TN
-fourth_result.phone # 865-824 2507
-fourth_result.url # http://www.apple.com/retail/westtownmall
+in_stock_results.first.product # Powerbeats Pro - Totally Wireless Earphones - Black
+in_stock_results.first.in_stock? # true
+in_stock_results.first.distance # 158.76
+in_stock_results.first.store # West Town Mall
+in_stock_results.first.city # Knoxville
+in_stock_results.first.state # TN
+in_stock_results.first.phone # 865-824 2507
+in_stock_results.first.url # http://www.apple.com/retail/westtownmall
 ```
 
 ## Releases

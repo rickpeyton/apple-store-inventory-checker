@@ -12,6 +12,8 @@ RSpec.describe AppleStoreInventoryChecker do
       expect(actual).to be_a AppleStoreInventoryChecker::ResultsList
       expect(first_result).to be_a AppleStoreInventoryChecker::Result
 
+      binding.pry
+
       expect(first_result.product).to eq("Powerbeats Pro - Totally Wireless Earphones - Black")
       expect(first_result.in_stock?).to eq(false)
       expect(first_result.distance).to eq(4.76)
