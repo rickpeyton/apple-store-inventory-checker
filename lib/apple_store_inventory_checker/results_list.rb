@@ -14,7 +14,7 @@ module AppleStoreInventoryChecker
     end
 
     def refresh
-      response = request(:get, query: { product_id: @product_id, zip: @zip })
+      response = request(:get, query: { "parts.0" => @product_id, location: @zip })
       raw_results = response.dig(:body, :stores)
       self.results = refresh_list_objects(raw_results, max_distance: @max_distance)
       self
@@ -40,7 +40,7 @@ module AppleStoreInventoryChecker
         result.phone = raw_result.dig(:phoneNumber)
         result.url = raw_result.dig(:directionsUrl)
         result
-      end.select { |result| result.distance < max_distance }
+      end.select { |result| result&.distance < max_distance }
     end
   end
 end

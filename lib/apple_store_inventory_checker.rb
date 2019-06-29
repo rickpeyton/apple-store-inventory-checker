@@ -3,6 +3,7 @@ begin
 rescue StandardError; end # rubocop:disable Lint/HandleExceptions
 require "json"
 
+require_relative "apple_store_inventory_checker/api_client"
 require_relative "apple_store_inventory_checker/api_request"
 require_relative "apple_store_inventory_checker/result"
 require_relative "apple_store_inventory_checker/results_list"
