@@ -58,7 +58,7 @@ first_result.state # TN
 first_result.phone # 615-435 0620
 first_result.url # http://www.apple.com/retail/coolspringsgalleria
 
-in_stock_results = retrieve_results.select { |result| result.in_stock? }
+in_stock_results = retrieve_results.select(&:in_stock?)
 
 in_stock_results.first.product # Powerbeats Pro - Totally Wireless Earphones - Black
 in_stock_results.first.in_stock? # true

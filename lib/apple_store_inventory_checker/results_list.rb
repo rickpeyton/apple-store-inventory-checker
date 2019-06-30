@@ -32,7 +32,7 @@ module AppleStoreInventoryChecker
       objects = raw_results.map do |raw_result|
         result = Result.new(product_id: product_id)
         result.product = raw_result.dig(:partsAvailability, product_id.to_sym, :storePickupProductTitle)
-        result.in_stock = raw_result.dig(:partsAvailability, product_id.to_sym, :storePickupQuote).include?("Today")
+        result.in_stock = stock_status(raw_result.dig(:partsAvailability, product_id.to_sym, :storePickupQuote))
         result.distance = raw_result.dig(:storedistance).to_f
         result.store = raw_result.dig(:storeName)
         result.city = raw_result.dig(:city)
@@ -42,6 +42,10 @@ module AppleStoreInventoryChecker
         result
       end
       objects.select { |result| result&.distance && (result.distance < max_distance) }
+    end
+
+    def stock_status(store_pickup)
+      store_pickup.match?("Today|Tomorrow")
     end
   end
 end
