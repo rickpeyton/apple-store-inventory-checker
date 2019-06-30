@@ -14,7 +14,7 @@ When a new product comes out I want to check the inventory at my local stores so
 
 ### How I use this
 
-I intend to setup a Ruby Lambda on AWS that will be triggered a few times a day by a Cloudwatch event.
+I have a Ruby Lambda on AWS (https://github.com/rickpeyton/powerbeats-notifier-lambda) that is triggered every three hours by a Cloudwatch event.
 
 If the item I am looking for is in stock I will receive an text message.
 
