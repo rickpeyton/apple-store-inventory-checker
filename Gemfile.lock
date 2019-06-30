@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    apple_store_inventory_checker (0.1.0.pre)
+    apple_store_inventory_checker (0.1.0)
 
 GEM
   remote: https://rubygems.org/
