@@ -1,6 +1,6 @@
 begin
   require "pry"
-rescue StandardError; end # rubocop:disable Lint/HandleExceptions
+rescue Exception; end # rubocop:disable Lint/HandleExceptions, Lint/RescueException
 require "json"
 
 require_relative "apple_store_inventory_checker/api_client"
