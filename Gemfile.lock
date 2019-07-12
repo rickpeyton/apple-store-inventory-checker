@@ -36,7 +36,7 @@ GEM
     public_suffix (3.1.1)
     rainbow (3.0.0)
     rake (12.3.2)
-    ramsey_cop (0.14.0)
+    ramsey_cop (0.14.1)
       rubocop (~> 0.62)
       rubocop-performance
     reverse_markdown (1.1.0)
